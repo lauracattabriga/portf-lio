@@ -27,3 +27,69 @@ body{
     width: 100%;
     z-index: 100;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+.menu-link{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500px;
+    position: relative;
+    padding: 0.5rem 0;
+}
+.menu-link::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: 0.5s ease;
+}
+.menu-link:hover::after{
+    width: 100%;
+}
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 200px var(--primary);
+    border-radius: 50%;
+    border: 3px solid var(--gray);
+}
+h1{
+    font-size: 3.5rem;
+    color: var(--primary);
+    font-weight: bold;
+    margin: 20px;
+}
+.cabecalho-subtitulo{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.sobre{
+    padding: 6rem 2rem;
+}
+.sobre-titulo{
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sobre-caixa{
+    pad: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--gray);
+}
