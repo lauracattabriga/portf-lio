@@ -7,3 +7,23 @@
 html{
     scroll-behavior: smooth;
 }
+:root{
+    --primary: #4f46e5;
+    --secondary: #7c3aed;
+    --black: #0f172a;
+    --darker: #0a0f1c;
+    --white: #e2e8f0;
+    --gray: #57606c3c;
+}
+body{
+    background: var(--black);
+    color: var(--white);
+}
+.navegacao{
+    position: fixed;
+    top: 0;
+    padding: 1.5px;
+    background: var(--gray) ;
+    width: 100%;
+    z-index: 100;
+}
